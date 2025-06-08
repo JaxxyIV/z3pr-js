@@ -1,15 +1,15 @@
-import build_offsets from './offsets/';
-import palette_editor from './palette_editor';
-import { maseya_blend, classic_blend } from './blends';
+import build_offsets from './offsets/index.js';
+import palette_editor from './palette_editor.js';
+import { maseya_blend, classic_blend } from './blends.js';
 
-import color_f from './color_f';
-import random from './random';
+import color_f from './color_f.js';
+import random from './random/index.js';
 
-import map from 'lodash/map';
-import each from 'lodash/each';
-import castArray from 'lodash/castArray';
+import map from 'lodash/map.js';
+import each from 'lodash/each.js';
+import castArray from 'lodash/castArray.js';
 
-export { default as color_f } from './color_f';
+export { default as color_f } from './color_f.js';
 
 export function randomize_copy(rom, ...args) { return randomize(rom.slice(), ...args); }
 

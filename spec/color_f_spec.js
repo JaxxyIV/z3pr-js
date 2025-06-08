@@ -1,10 +1,10 @@
-import with_cases from './with_cases';
+import with_cases from './with_cases.js';
 import chai from 'chai';
 chai.should();
 
-import map from 'lodash/map';
+import map from 'lodash/map.js';
 
-import color_f from '../src/color_f';
+import color_f from '../src/color_f.js';
 
 const delta = 10e-9;
 

@@ -1,8 +1,8 @@
-import { max, min } from './util';
+import { max, min } from './util.js';
 
-import at from 'lodash/at';
-import isEqual from 'lodash/isEqual';
-import clamp from 'lodash/clamp';
+import at from 'lodash/at.js';
+import isEqual from 'lodash/isEqual.js';
+import clamp from 'lodash/clamp.js';
 
 const { abs } = Math;
 

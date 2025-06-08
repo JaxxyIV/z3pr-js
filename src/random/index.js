@@ -1,7 +1,7 @@
-import sfc32 from './sfc32';
+import sfc32 from './sfc32.js';
 
-import times from 'lodash/times';
-import isEmpty from 'lodash/isEmpty';
+import times from 'lodash/times.js';
+import isEmpty from 'lodash/isEmpty.js';
 
 const inclusive_max = 0xFFFFFFFF;
 const exclusive_max = 0x100000000;

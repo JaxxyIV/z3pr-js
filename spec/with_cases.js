@@ -1,7 +1,7 @@
-import each from 'lodash/each';
-import toPairs from 'lodash/toPairs';
-import castArray from 'lodash/castArray';
-import isPlainObject from 'lodash/isPlainObject';
+import each from 'lodash/each.js';
+import toPairs from 'lodash/toPairs.js';
+import castArray from 'lodash/castArray.js';
+import isPlainObject from 'lodash/isPlainObject.js';
 
 // Invokes the predicate with the arguments supplied through 'cases'.
 //

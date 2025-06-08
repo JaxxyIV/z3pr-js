@@ -1,6 +1,6 @@
 {
   "name": "@maseya/z3pr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "test": "mocha -r esm \"./spec/**/*_spec.js\"",
     "build": "browserify -d -s z3pr -t babelify -p tinyify src/index.js | exorcist dist/z3pr-umd.map.js > dist/z3pr-umd.js"
@@ -19,6 +19,7 @@
     "tinyify": "^3.0.0"
   },
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "files": [
     "src/**",
     "*.md"

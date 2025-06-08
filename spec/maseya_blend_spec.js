@@ -1,14 +1,14 @@
 import chai from 'chai';
 chai.should();
 
-import times from 'lodash/times';
-import random from 'lodash/random';
+import times from 'lodash/times.js';
+import random from 'lodash/random.js';
 
 const { abs, min } = Math;
 
-import color_f from '../src/color_f';
+import color_f from '../src/color_f.js';
 
-import { maseya_blend } from '../src/blends';
+import { maseya_blend } from '../src/blends.js';
 
 const delta = 10e-9;
 const repeats = 500;
