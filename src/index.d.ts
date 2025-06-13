@@ -19,16 +19,16 @@ export function randomize_copy<T extends SeedValue>(rom: Uint8Array, ...args: Ar
  */
 export function randomize<T extends SeedValue>(rom: Uint8Array, options: PaletteRandomizerOptions<T>, next_blend?: (seed: T) => Generator<number>): Uint8Array;
 
-type PaletteRandomizerOptions<T extends SeedValue> = Partial<{
-    mode: PaletteMode,
-    randomize_overworld: boolean,
-    randomize_dungeon: boolean,
-    randomize_link_sprite: boolean,
-    randomize_sword: boolean,
-    randomize_shield: boolean,
-    randomize_hud: boolean,
-    seed: T,
-}>;
+type PaletteRandomizerOptions<T extends SeedValue> = {
+    mode?: PaletteMode,
+    randomize_overworld?: boolean,
+    randomize_dungeon?: boolean,
+    randomize_link_sprite?: boolean,
+    randomize_sword?: boolean,
+    randomize_shield?: boolean,
+    randomize_hud?: boolean,
+    seed?: T,
+};
 
 type PaletteModifier = {
     r: number,
