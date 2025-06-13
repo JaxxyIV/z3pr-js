@@ -45,5 +45,5 @@ type PaletteModifier = {
 
 type SeedValue = number | [number, number] | [number, number, number];
 
-type PaletteMode = 'none' | 'maseya' | 'grayscale' | 'blackout' | 'classic' |
-    'dizzy' | 'sick' | 'puke';
+type PaletteMode = 'none' | 'maseya' | 'grayscale' | 'negative' | 'blackout' |
+    'classic' | 'dizzy' | 'sick' | 'puke';
