@@ -6,7 +6,7 @@ export declare function color_f(r: number, g: number, b: number): PaletteModifie
  * @param args A rest parameter of additional arguments to provide.
  * @returns The modified deep copy of the original ROM data.
  */
-export function randomize_copy<T extends SeedValue>(rom: Uint8Array, ...args: Array<PaletteRandomizerOptions<T> | ((seed: T) => Generator<PaletteModifier>)>): Uint8Array;
+export function randomize_copy<T extends SeedValue>(rom: Uint8Array, ...args: Array<PaletteRandomizerOptions<T> | ((seed: T) => Generator<PaletteModifier, void, unknown>)>): Uint8Array;
 
 /**
  * Applies a randomized palette to the given ROM data.
@@ -17,7 +17,7 @@ export function randomize_copy<T extends SeedValue>(rom: Uint8Array, ...args: Ar
  * color blend values.
  * @returns The modified ROM data.
  */
-export function randomize<T extends SeedValue>(rom: Uint8Array, options?: PaletteRandomizerOptions<T>, next_blend?: (seed: T) => Generator<PaletteModifier>): Uint8Array;
+export function randomize<T extends SeedValue>(rom: Uint8Array, options?: PaletteRandomizerOptions<T>, next_blend?: (seed: T) => Generator<PaletteModifier, void, unknown>): Uint8Array;
 
 type PaletteRandomizerOptions<T extends SeedValue> = {
     mode?: PaletteMode,
