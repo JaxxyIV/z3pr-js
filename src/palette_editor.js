@@ -1,13 +1,13 @@
-import color_f from './color_f';
+import color_f from './color_f.js';
 
-import { group_values_ordered } from './util';
-import { le_dw_value, le_dw_bytes } from './util';
+import { group_values_ordered } from './util.js';
+import { le_dw_value, le_dw_bytes } from './util.js';
 
-import each from 'lodash/each';
-import mapValues from 'lodash/mapValues';
-import transform from 'lodash/transform';
-import clamp from 'lodash/clamp';
-import parseInt from 'lodash/parseInt';
+import each from 'lodash/each.js';
+import mapValues from 'lodash/mapValues.js';
+import transform from 'lodash/transform.js';
+import clamp from 'lodash/clamp.js';
+import parseInt from 'lodash/parseInt.js';
 
 export default function (rom, offsets) {
     const methods = {};

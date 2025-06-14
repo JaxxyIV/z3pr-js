@@ -1,12 +1,12 @@
-import dungeon from './dungeon';
-import hud from './hud';
-import link_sprite from './link_sprite';
-import shield from './shield';
-import sword from './sword';
-import overworld from './overworld';
+import dungeon from './dungeon.json' with { type: 'json' };
+import hud from './hud.json' with { type: 'json' };
+import link_sprite from './link_sprite.json' with { type: 'json' };
+import shield from './shield.json' with { type: 'json' };
+import sword from './sword.json' with { type: 'json' };
+import overworld from './overworld.json' with { type: 'json' };
 
-import compact from 'lodash/compact';
-import flatten from 'lodash/flatten';
+import compact from 'lodash/compact.js';
+import flatten from 'lodash/flatten.js';
 
 export default function(options) {
     return flatten(

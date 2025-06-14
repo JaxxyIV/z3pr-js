@@ -1,7 +1,7 @@
-import color_f from './color_f';
+import color_f from './color_f.js';
 
-import map from 'lodash/map';
-import at from 'lodash/at';
+import map from 'lodash/map.js';
+import at from 'lodash/at.js';
 
 const { max, sqrt } = Math;
 

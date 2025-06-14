@@ -1,4 +1,4 @@
-import isNil from 'lodash/isNil';
+import isNil from 'lodash/isNil.js';
 
 export default function sfc32(s1, s2, s3) {
     let a, b, c, n;

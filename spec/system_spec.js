@@ -1,26 +1,26 @@
-import with_cases from './with_cases';
+import with_cases from './with_cases.js';
 import chai from 'chai';
 chai.should();
 
-import map from 'lodash/map';
-import slice from 'lodash/slice';
-import concat from 'lodash/concat';
-import keys from 'lodash/keys';
-import toPairs from 'lodash/toPairs';
-import parseInt from 'lodash/parseInt';
+import map from 'lodash/map.js';
+import slice from 'lodash/slice.js';
+import concat from 'lodash/concat.js';
+import keys from 'lodash/keys.js';
+import toPairs from 'lodash/toPairs.js';
+import parseInt from 'lodash/parseInt.js';
 
-import base from './data/base.json';
-import negative from './data/negative.json';
-import grayscale from './data/grayscale.json';
-import maseya from './data/maseya.json';
-import classic from './data/classic.json';
-import dizzy from './data/dizzy.json';
-import sick from './data/sick.json';
-import puke from './data/puke.json';
+import base from './data/base.json' with { type: 'json' };
+import negative from './data/negative.json' with { type: 'json' };
+import grayscale from './data/grayscale.json' with { type: 'json' };
+import maseya from './data/maseya.json' with { type: 'json' };
+import classic from './data/classic.json' with { type: 'json' };
+import dizzy from './data/dizzy.json' with { type: 'json' };
+import sick from './data/sick.json' with { type: 'json' };
+import puke from './data/puke.json' with { type: 'json' };
 
-import color_f from '../src/color_f';
+import color_f from '../src/color_f.js';
 
-import { randomize } from '../src/';
+import { randomize } from '../src/index.js';
 
 describe('Palette randomizer', () => {
 

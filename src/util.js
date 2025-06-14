@@ -1,8 +1,8 @@
-import map from 'lodash/map';
-import groupBy from 'lodash/groupBy';
-import findIndex from 'lodash/findIndex';
-import _max from 'lodash/max';
-import _min from 'lodash/min';
+import map from 'lodash/map.js';
+import groupBy from 'lodash/groupBy.js';
+import findIndex from 'lodash/findIndex.js';
+import _max from 'lodash/max.js';
+import _min from 'lodash/min.js';
 
 // Creates an array composed of value-group pairs, where each value is a
 // representative element from`collection` and its group is an array of
