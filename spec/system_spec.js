@@ -1,4 +1,4 @@
-import with_cases from './with_cases';
+import with_cases from './with_cases.js';
 import chai from 'chai';
 chai.should();
 
